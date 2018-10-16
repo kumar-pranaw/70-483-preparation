@@ -671,9 +671,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\pranav.k.verma\\Documents\\GitHub\\70-483-preparation\\70-483 Prep\\Console App 1\\Console App 1.csproj",
-      "projectName": "Console App 1",
-      "projectPath": "C:\\Users\\pranav.k.verma\\Documents\\GitHub\\70-483-preparation\\70-483 Prep\\Console App 1\\Console App 1.csproj",
+      "projectUniqueName": "C:\\Users\\pranav.k.verma\\Documents\\GitHub\\70-483-preparation\\70-483 Prep\\Console App 1\\ConsoleApp1.csproj",
+      "projectName": "ConsoleApp1",
+      "projectPath": "C:\\Users\\pranav.k.verma\\Documents\\GitHub\\70-483-preparation\\70-483 Prep\\Console App 1\\ConsoleApp1.csproj",
       "packagesPath": "C:\\Users\\pranav.k.verma\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\pranav.k.verma\\Documents\\GitHub\\70-483-preparation\\70-483 Prep\\Console App 1\\obj\\",
       "projectStyle": "PackageReference",
