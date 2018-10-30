@@ -39,7 +39,7 @@ namespace ConsoleApp1
         public static void BackGroundThreads()
         {
             System.Threading.Thread t = new System.Threading.Thread(new System.Threading.ThreadStart(ThreadMethod2));
-            t.IsBackground = false;// Changin isBackground to true will not reflect the changes application will quit
+            t.IsBackground = false;// Changing isBackground to true will not reflect the changes application will quit
             t.Start();
         }
 
