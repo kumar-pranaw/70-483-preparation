@@ -12,7 +12,7 @@ namespace ConsoleApp1
         {
             Thread t1 = new Thread(new ThreadStart(() =>
             {
-                for(int i=0; i<10; i++)
+                for (int i = 0; i < 10; i++)
                 {
                     _field++;
                     Console.WriteLine("Thread A {0}", _field);
@@ -51,6 +51,7 @@ namespace ConsoleApp1
             //t.Wait();
             Task t = Task.Run(action: ThreadCallerMethod);
             t.Wait();
+
         }
         public static void ThreadCallerMethod()
         {
@@ -59,5 +60,42 @@ namespace ConsoleApp1
                 Console.Write("*");
             }
         }
+        public static void ContinuationThreadMethod()
+        {
+            Task<int> t = Task.Run(() =>
+            {
+                return 42;
+            }).ContinueWith((i) =>
+            {
+                return i.Result * 2;
+            });
+
+            t = t.ContinueWith((i) =>
+            {
+                return i.Result * 2;
+            });
+            Console.WriteLine(t.Result);
+        }
+
+        // In this we can use more task continuation 
+        // for ex: continutaion if faulty or if success
+        public static void ContinuationMethod()
+        {
+            Task<int> t = Task.Run(() =>
+             {
+                 //throw new Exception(); n
+                 return 42;
+             });
+            t.ContinueWith((i) =>
+            {
+                Console.WriteLine("Faulted");
+            }, TaskContinuationOptions.OnlyOnFaulted);
+            t.ContinueWith((i) =>
+            {
+                Console.WriteLine("Success");
+            });
+            Console.WriteLine(t.Result);
+        }
+
     }
 }

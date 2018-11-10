@@ -19,3 +19,4 @@ C:\Users\sanup\Documents\GitHub\70-483-preparation\70-483 Prep\Console App 1\obj
 C:\Users\sanup\Documents\GitHub\70-483-preparation\70-483 Prep\Console App 1\obj\Debug\netcoreapp2.0\ConsoleApp1.AssemblyInfo.cs
 C:\Users\sanup\Documents\GitHub\70-483-preparation\70-483 Prep\Console App 1\obj\Debug\netcoreapp2.0\ConsoleApp1.dll
 C:\Users\sanup\Documents\GitHub\70-483-preparation\70-483 Prep\Console App 1\obj\Debug\netcoreapp2.0\ConsoleApp1.pdb
+C:\Users\sanup\Documents\GitHub\70-483-preparation\70-483 Prep\Console App 1\obj\Debug\netcoreapp2.0\ConsoleApp1.csprojAssemblyReference.cache

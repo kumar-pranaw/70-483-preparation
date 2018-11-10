@@ -13,7 +13,9 @@ namespace ConsoleApp1
             //ThreadProgram.AnotherThread();
             //ThreadProgram.BackGroundThreads();
             //ThreadProgram.ParameterizedThread();
-
+            //ThreadProgram.ParallelThread();
+            string result = Asynchronus.DownloadContent().Result;
+            Console.WriteLine(result);
             // Stop Thread Program using Lambda Function
             //Thread t = new Thread(new ThreadStart(() =>
             //{
@@ -30,7 +32,7 @@ namespace ConsoleApp1
             //stopped = true;
 
             //ThreadStaticDemo.ThreadStaticMethod();
-            //ThreadStaticDemo.ThreadMethod();
+            //ThreadStaticDemo.ContinuationMethod();
             //Console.WriteLine("\n\n");
             //Console.WriteLine("------------------- Some Extra Concepts of C# --------------------");
             //Console.WriteLine("\n\n");
