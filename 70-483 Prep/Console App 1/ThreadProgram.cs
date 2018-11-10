@@ -1,31 +1,30 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Threading;
 
 namespace ConsoleApp1
 {
-    public static class Thread
+    public static class ThreadProgram
     {
         public static void ThreadMethod()
         {
             for(int i = 0; i < 10; i++)
             {
                 Console.WriteLine("Threadproc: {0}", i);
-                System.Threading.Thread.Sleep(0);
+                Thread.Sleep(0);
             }
         }
         public static void AnotherThread()
         {
-            System.Threading.Thread t = new System.Threading.Thread(new System.Threading.ThreadStart(ThreadMethod));
+            Thread t = new Thread(new ThreadStart(ThreadMethod));
             t.Start();
 
             for(int i = 0; i < 4; i++)
             {
                 Console.WriteLine("Main Thread: Do Some work. ");
-                System.Threading.Thread.Sleep(0);
+                Thread.Sleep(0);
             }
             t.Join();
+            Console.WriteLine("After Thread: Do Some work. ");
         }
 
         public static void ThreadMethod2()
@@ -33,14 +32,16 @@ namespace ConsoleApp1
             for(int i = 0; i < 10; i++)
             {
                 Console.WriteLine("ThreadProcess: {0}", i);
-                System.Threading.Thread.Sleep(1000);
-            }
+                Thread.Sleep(1000);
+            } 
         }
         public static void BackGroundThreads()
         {
-            System.Threading.Thread t = new System.Threading.Thread(new System.Threading.ThreadStart(ThreadMethod2));
-            t.IsBackground = false;// Changing isBackground to true will not reflect the changes application will quit
+            Thread t = new Thread(new ThreadStart(ThreadMethod2));
+            t.IsBackground = true;// Changing isBackground to true will not reflect the changes application will quit
             t.Start();
+
+            t.Join();
         }
 
         /// <summary>
@@ -51,8 +52,14 @@ namespace ConsoleApp1
         {
             for(int i = 0; i < (int)o; i++)
             {
-                Console.WriteLine("ThreadProc: {0}", i)
-;            }
+                Console.WriteLine("ThreadProc: {0}", i);
+            }
+        }
+        public static void ParameterizedThread()
+        {
+            Thread t = new Thread(new ParameterizedThreadStart(ThreadMethodWithParam));
+            t.Start(15);
+            t.Join();
         }
     }
 }
