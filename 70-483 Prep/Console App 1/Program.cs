@@ -3,7 +3,7 @@ using System.Threading;
 
 namespace ConsoleApp1
 {
-    class Program
+    internal class Program
     {
         public static bool stopped = false;
         static void Main(string[] args)

@@ -515,15 +515,16 @@
       ]
     },
     "Microsoft.NETCore.Platforms/2.0.0": {
-      "sha512": "VdLJOCXhZaEMY7Hm2GKiULmn7IEPFE4XC5LPSfBVCUIA8YLZVh846gtfBJalsPQF2PlzdD7ecX7DZEulJ402ZQ==",
+      "sha512": "5BdAWDgMNwf90L0J+C/eh6kfHDa37ViL1cBL1nv5zPA4TB2cGV51YiQyvzCEy9DBE0LwwMI4+PkUpIekKyocSA==",
       "type": "package",
       "path": "microsoft.netcore.platforms/2.0.0",
       "files": [
+        ".signature.p7s",
         "LICENSE.TXT",
-        "Microsoft.NETCore.Platforms.2.0.0.nupkg.sha512",
-        "Microsoft.NETCore.Platforms.nuspec",
         "THIRD-PARTY-NOTICES.TXT",
         "lib/netstandard1.0/_._",
+        "microsoft.netcore.platforms.2.0.0.nupkg.sha512",
+        "microsoft.netcore.platforms.nuspec",
         "runtime.json",
         "useSharedDesignerContext.txt",
         "version.txt"
@@ -664,27 +665,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\pranav.k.verma\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {},
+    "C:\\Users\\sanup\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\pranav.k.verma\\Documents\\GitHub\\70-483-preparation\\70-483 Prep\\Console App 1\\ConsoleApp1.csproj",
+      "projectUniqueName": "C:\\Users\\sanup\\Documents\\GitHub\\70-483-preparation\\70-483 Prep\\Console App 1\\ConsoleApp1.csproj",
       "projectName": "ConsoleApp1",
-      "projectPath": "C:\\Users\\pranav.k.verma\\Documents\\GitHub\\70-483-preparation\\70-483 Prep\\Console App 1\\ConsoleApp1.csproj",
-      "packagesPath": "C:\\Users\\pranav.k.verma\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\pranav.k.verma\\Documents\\GitHub\\70-483-preparation\\70-483 Prep\\Console App 1\\obj\\",
+      "projectPath": "C:\\Users\\sanup\\Documents\\GitHub\\70-483-preparation\\70-483 Prep\\Console App 1\\ConsoleApp1.csproj",
+      "packagesPath": "C:\\Users\\sanup\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\sanup\\Documents\\GitHub\\70-483-preparation\\70-483 Prep\\Console App 1\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\pranav.k.verma\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
+        "C:\\Users\\sanup\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.0"
