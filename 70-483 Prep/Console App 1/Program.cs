@@ -15,22 +15,22 @@ namespace ConsoleApp1
             //ThreadProgram.ParameterizedThread();
 
             // Stop Thread Program using Lambda Function
-            //Thread t = new Thread(new ThreadStart(() =>
-            //{
-            //    while (!stopped)
-            //    {
-            //        Console.WriteLine("Running...");
-            //        Thread.Sleep(1000);
-            //    }
-            //    Console.WriteLine("Thread is stopped");
-            //}));
-            //t.Start();
-            //Console.WriteLine("Press any key to stop the thread");
-            //Console.ReadKey();
-            //stopped = true;
+            Thread t = new Thread(new ThreadStart(() =>
+            {
+                while (!stopped)
+                {
+                    Console.WriteLine("Running...");
+                    Thread.Sleep(1000);
+                }
+                Console.WriteLine("Thread is stopped");
+            }));
+            t.Start();
+            Console.WriteLine("Press any key to stop the thread");
+            Console.ReadKey();
+            stopped = true;
 
             //ThreadStaticDemo.ThreadStaticMethod();
-            ThreadStaticDemo.ThreadMethod();
+            //ThreadStaticDemo.ThreadMethod();
             //Console.WriteLine("\n\n");
             //Console.WriteLine("------------------- Some Extra Concepts of C# --------------------");
             //Console.WriteLine("\n\n");
